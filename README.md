@@ -28,3 +28,32 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 - **Kotlin Multiplatform (KMP)**  
 
 ---
+
+## 📸 Screenshots
+(Coming soon: UI previews and screenshots of replicated designs)
+
+---
+
+## 🤝 Contributing
+This is a personal practice project, but contributions, ideas, and suggestions are welcome! Feel free to open issues or submit pull requests.
+
+---
+
+## 📢 Disclaimer
+This project is for educational purposes only. All replicated designs are inspired by existing apps and UI challenges, but no proprietary assets or code are used.
+
+---
+
+## ⭐ Support
+If you find this project helpful or inspiring:
+- Give it a ⭐ on GitHub
+- Share it with other developers exploring Jetpack Compose
+
+---
+
+## 📚 Resources
+- **Jetpack Compose Documentation**
+- **Kotlin Multiplatform**
+- **Android Developers YouTube**  
+
+---
