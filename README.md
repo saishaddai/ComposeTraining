@@ -8,6 +8,7 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 ## 📱 About the Project
 
 - Practice building modern UIs with **Jetpack Compose**.
+- Add **Navigation 3** to move between screens properly (not implemented yet).
 - Replicate **popular app designs** and **UI challenges**.
 - Showcase how Compose can simplify and enhance Android development.
 - Explore **Kotlin Multiplatform** possibilities for sharing UI logic across platforms.
@@ -35,6 +36,7 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 
 ## 📸 Screenshots
 
+Please Check the directory `screens/` to see each screen implementation.
 <table>
   <tr>
     <td><b>Birthday Card</b></td>
