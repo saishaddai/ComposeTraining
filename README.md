@@ -6,7 +6,9 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 ---
 
 ## 📱 About the Project
+
 - Practice building modern UIs with **Jetpack Compose**.
+- Add **Navigation 3** to move between screens properly (not implemented yet).
 - Replicate **popular app designs** and **UI challenges**.
 - Showcase how Compose can simplify and enhance Android development.
 - Explore **Kotlin Multiplatform** possibilities for sharing UI logic across platforms.
@@ -14,6 +16,7 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 ---
 
 ## 🎯 Goals
+
 - Strengthen my understanding of **Jetpack Compose**.
 - Build a collection of reusable **UI components**.
 - Demonstrate Compose’s flexibility in replicating **real-world app designs**.
@@ -22,38 +25,58 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 ---
 
 ## 🛠️ Tech Stack
+
 - **Kotlin**  
-- **Jetpack Compose**  
+- **Jetpack Compose**
+- **Compose Navigation 3**
 - **Android Studio**  
 - **Kotlin Multiplatform (KMP)**  
 
 ---
 
 ## 📸 Screenshots
-(Coming soon: UI previews and screenshots of replicated designs)
+
+Please Check the directory `screens/` to see each screen implementation.
+<table>
+  <tr>
+    <td><b>Birthday Card</b></td>
+    <td><b>Article</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_birthday_card.png" width="300"></td>
+    <td><img src="screenshots/compose_article.png" width="300"></td>
+  </tr>
+</table>
 
 ---
 
 ## 🤝 Contributing
+
 This is a personal practice project, but contributions, ideas, and suggestions are welcome! Feel free to open issues or submit pull requests.
 
 ---
 
 ## 📢 Disclaimer
+
 This project is for educational purposes only. All replicated designs are inspired by existing apps and UI challenges, but no proprietary assets or code are used.
 
 ---
 
 ## ⭐ Support
+
 If you find this project helpful or inspiring:
+
 - Give it a ⭐ on GitHub
 - Share it with other developers exploring Jetpack Compose
 
 ---
 
 ## 📚 Resources
+
 - **Jetpack Compose Documentation**
 - **Kotlin Multiplatform**
+- **Jetpack Compose**
+- **Compose Navigation 3**
 - **Android Developers YouTube**  
 
 ---
