@@ -7,6 +7,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.ui.NavDisplay
+import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 
 data object Home
@@ -24,13 +25,15 @@ fun NavigationWrapper() {
             when (key) {
                 is Home -> NavEntry(key) {
                     HomeScreen {
+                        //TODO send the right screen
                         backStack.add(BirthdayCard(it))
                     }
                 }
                 is BirthdayCard -> NavEntry(key) {
-                    HomeScreen {
-                        backStack.add(BirthdayCard(it))
-                    }
+                    BirthdayScreen(
+                        message = "Happy Birthday ${key.name}!",
+                        from = "from Sai"
+                    )
                 }
                 else -> NavEntry(key = Unit) {
                     Text("Error")

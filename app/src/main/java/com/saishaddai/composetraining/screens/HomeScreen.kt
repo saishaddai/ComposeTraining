@@ -8,19 +8,18 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 
 
 @Composable
 fun HomeScreen(navigateToScreen: (String) -> Unit) {
     Scaffold { paddingValues ->
-        LazyColumn (Modifier.padding(paddingValues)) {
-            items (20) {
-                Box(modifier = Modifier
-                    .padding(16.dp)
-                    .clickable {
-                        navigateToScreen(it.toString())
-                    }
+        LazyColumn(Modifier.padding(paddingValues)) {
+            items(20) {
+                Box(
+                    modifier = Modifier
+                        .clickable {
+                            navigateToScreen(it.toString())
+                        }
                 ) {
                     Text("position $it")
                 }

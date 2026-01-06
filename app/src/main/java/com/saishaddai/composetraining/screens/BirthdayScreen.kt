@@ -17,48 +17,44 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.saishaddai.composetraining.R
 
-class BirthdayScreen {
-
-    @Composable
-    fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
-        Column (
-            verticalArrangement = Arrangement.Center,
-            modifier = modifier
-        ) {
-            Text(
-                text = message,
-                fontSize = 100.sp,
-                lineHeight = 116.sp,
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = from,
-                fontSize = 36.sp,
-                modifier = Modifier
-                    .padding(16.dp)
-                    .align(alignment = Alignment.CenterHorizontally)
-            )
-        }
+@Composable
+fun BirthdayScreen(message: String, from: String, modifier: Modifier = Modifier) {
+    val image = painterResource(R.drawable.androidparty)
+    Box(modifier) {
+        Image(
+            painter = image,
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            alpha = 0.5F
+        )
+        GreetingText(
+            message = message,
+            from = from,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
+        )
     }
+}
 
-    @Composable
-    fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
-        val image = painterResource(R.drawable.androidparty)
-        Box (modifier) {
-            Image(
-                painter = image,
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                alpha = 0.5F
-            )
-            GreetingText(
-                message = message,
-                from = from,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(8.dp)
-            )
-        }
+@Composable
+private fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
+    Column(
+        verticalArrangement = Arrangement.Center,
+        modifier = modifier
+    ) {
+        Text(
+            text = message,
+            fontSize = 100.sp,
+            lineHeight = 116.sp,
+            textAlign = TextAlign.Center
+        )
+        Text(
+            text = from,
+            fontSize = 36.sp,
+            modifier = Modifier
+                .padding(16.dp)
+                .align(alignment = Alignment.CenterHorizontally)
+        )
     }
-
 }
