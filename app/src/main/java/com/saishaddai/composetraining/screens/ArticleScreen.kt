@@ -13,41 +13,41 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.saishaddai.composetraining.R
 
-class ArticleScreen {
+@Composable
+fun ArticleScreen(
+    title: String,
+    articleAbstract: String,
+    articleText: String,
+    modifier: Modifier = Modifier
+) {
+    val image = painterResource(R.drawable.bg_compose_background)
+    Column(
+        modifier = modifier
+    ) {
+        Image(
+            painter = image,
+            contentDescription = "header of an article",
+            contentScale = ContentScale.FillWidth
+        )
+        Text(
+            text = title,
+            fontSize = 24.sp,
+            modifier = Modifier.padding(16.dp),
+            textAlign = TextAlign.Start,
 
-    @Composable
-    fun Article(title: String,
-                         articleAbstract: String,
-                         articleText: String,
-                         modifier: Modifier = Modifier) {
-        val image = painterResource(R.drawable.bg_compose_background)
-        Column (
-            modifier = modifier
-        ) {
-            Image(
-                painter = image,
-                contentDescription = "header of an article",
-                contentScale = ContentScale.FillWidth
             )
-            Text(
-                text = title,
-                fontSize = 24.sp,
-                modifier = Modifier.padding(16.dp),
-                textAlign = TextAlign.Start,
-
-            )
-            Text(
-                text = articleAbstract,
-                modifier = Modifier
-                    .padding(start = 16.dp, end = 16.dp),
-                textAlign = TextAlign.Justify
-            )
-            Text(
-                text = articleText,
-                modifier = Modifier
-                    .padding(16.dp),
-                textAlign = TextAlign.Justify
-            )
-        }
+        Text(
+            text = articleAbstract,
+            modifier = Modifier
+                .padding(start = 16.dp, end = 16.dp),
+            textAlign = TextAlign.Justify
+        )
+        Text(
+            text = articleText,
+            modifier = Modifier
+                .padding(16.dp),
+            textAlign = TextAlign.Justify
+        )
     }
 }
+
