@@ -1,4 +1,15 @@
 package com.saishaddai.composetraining.routes
 
-class Routes {
+import androidx.navigation3.runtime.NavKey
+import kotlinx.serialization.Serializable
+
+sealed class Routes: NavKey {
+    @Serializable
+    data object Home : Routes()
+
+    @Serializable
+    data class BirthdayCard(val name: String) : Routes()
+
+    @Serializable
+    data object Error : Routes()
 }
