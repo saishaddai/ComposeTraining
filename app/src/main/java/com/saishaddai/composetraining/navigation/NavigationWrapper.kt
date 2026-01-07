@@ -7,17 +7,15 @@ import androidx.compose.animation.togetherWith
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavBackStack
-import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.runtime.NavKey
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
+import com.saishaddai.composetraining.routes.Routes.BirthdayCard
+import com.saishaddai.composetraining.routes.Routes.Error
+import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.HomeScreen
-import kotlinx.serialization.Serializable
-import com.saishaddai.composetraining.routes.Routes
-import com.saishaddai.composetraining.routes.Routes.*
-import java.util.Map.entry
 
 @Composable
 fun NavigationWrapper() {
