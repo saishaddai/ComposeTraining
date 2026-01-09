@@ -16,9 +16,11 @@ import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
+import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.HomeScreen
+import com.saishaddai.composetraining.screens.TaskManagerScreen
 
 @Composable
 fun NavigationWrapper() {
@@ -33,6 +35,7 @@ fun NavigationWrapper() {
                     when (it) {
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
+                        "2" -> backStack.navigateTo(TaskFinished)
                         else -> backStack.navigateTo(BirthdayCard(it))
                     }
                 }
@@ -49,6 +52,9 @@ fun NavigationWrapper() {
                     articleAbstract = "Abstract of article",
                     articleText = "Article Text",
                 )
+            }
+            entry<TaskFinished> {
+                TaskManagerScreen()
             }
             entry<Error> {
                 Button(
