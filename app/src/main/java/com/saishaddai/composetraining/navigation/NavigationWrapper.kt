@@ -4,6 +4,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavBackStack
@@ -11,9 +12,11 @@ import androidx.navigation3.runtime.NavKey
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
+import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
+import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 
@@ -27,8 +30,11 @@ fun NavigationWrapper() {
         entryProvider = entryProvider {
             entry<Home> {
                 HomeScreen {
-                    //TODO send the right screen
-                    backStack.navigateTo(BirthdayCard(it))
+                    when (it) {
+                        "0" -> backStack.navigateTo(BirthdayCard(it))
+                        "1" -> backStack.navigateTo(ArticleRoute)
+                        else -> backStack.navigateTo(BirthdayCard(it))
+                    }
                 }
             }
             entry<BirthdayCard> {
@@ -37,8 +43,19 @@ fun NavigationWrapper() {
                     from = "from Sai"
                 )
             }
+            entry<ArticleRoute> {
+                ArticleScreen(
+                    title = "Title of article",
+                    articleAbstract = "Abstract of article",
+                    articleText = "Article Text",
+                )
+            }
             entry<Error> {
-                Text("Error")
+                Button(
+                    onClick = { backStack.navigateBack() }
+                ) {
+                    Text("Error")
+                }
             }
         },
         transitionSpec = {

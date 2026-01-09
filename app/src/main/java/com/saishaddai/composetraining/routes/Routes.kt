@@ -11,5 +11,8 @@ sealed class Routes: NavKey {
     data class BirthdayCard(val name: String) : Routes()
 
     @Serializable
+    data object ArticleRoute : Routes()
+
+    @Serializable
     data object Error : Routes()
 }
