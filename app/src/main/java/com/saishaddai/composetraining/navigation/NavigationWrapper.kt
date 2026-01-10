@@ -4,8 +4,6 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
@@ -19,6 +17,7 @@ import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
+import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 
@@ -36,7 +35,7 @@ fun NavigationWrapper() {
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
                         "2" -> backStack.navigateTo(TaskFinished)
-                        else -> backStack.navigateTo(BirthdayCard(it))
+                        else -> backStack.navigateTo(Error)
                     }
                 }
             }
@@ -57,11 +56,7 @@ fun NavigationWrapper() {
                 TaskManagerScreen()
             }
             entry<Error> {
-                Button(
-                    onClick = { backStack.navigateBack() }
-                ) {
-                    Text("Error")
-                }
+                ErrorScreen { backStack.navigateBack() }
             }
         },
         transitionSpec = {
