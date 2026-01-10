@@ -17,5 +17,8 @@ sealed class Routes: NavKey {
     data object TaskFinished : Routes()
 
     @Serializable
+    data object Cuadrant : Routes()
+
+    @Serializable
     data object Error : Routes()
 }
