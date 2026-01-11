@@ -20,5 +20,8 @@ sealed class Routes: NavKey {
     data object Cuadrant : Routes()
 
     @Serializable
+    data object BusinessCard : Routes()
+
+    @Serializable
     data object Error : Routes()
 }

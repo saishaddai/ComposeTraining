@@ -12,15 +12,17 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
+import com.saishaddai.composetraining.routes.Routes.BusinessCard
 import com.saishaddai.composetraining.routes.Routes.Cuadrant
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
-import com.saishaddai.composetraining.screens.QuadrantScreen
+import com.saishaddai.composetraining.screens.BusinessCardScreen
 import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
+import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 
 @Composable
@@ -34,10 +36,12 @@ fun NavigationWrapper() {
             entry<Home> {
                 HomeScreen {
                     when (it) {
+                        //TODO Improve this part to depend on a sealed class instead of the index as String
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
                         "2" -> backStack.navigateTo(TaskFinished)
                         "3" -> backStack.navigateTo(Cuadrant)
+                        "4" -> backStack.navigateTo(BusinessCard)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -60,6 +64,9 @@ fun NavigationWrapper() {
             }
             entry<Cuadrant> {
                 QuadrantScreen()
+            }
+            entry<BusinessCard> {
+                BusinessCardScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }
