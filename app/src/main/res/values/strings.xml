@@ -19,5 +19,8 @@
 <!--    Business Card -->
     <string name="bcard_name">Jennifer Doe</string>
     <string name="bcard_position">Android Developer Extraordinaire</string>
+    <string name="business_card_text1">+11 (123) 444 555 666</string>
+    <string name="business_card_text2">\@AndroidDev</string>
+    <string name="business_card_text3">jen.doe@android.com</string>
 
 </resources>
