@@ -47,17 +47,10 @@ fun NavigationWrapper() {
                 }
             }
             entry<BirthdayCard> {
-                BirthdayScreen(
-                    message = "Happy Birthday ${it.name}!",
-                    from = "from Sai"
-                )
+                BirthdayScreen()
             }
             entry<ArticleRoute> {
-                ArticleScreen(
-                    title = "Title of article",
-                    articleAbstract = "Abstract of article",
-                    articleText = "Article Text",
-                )
+                ArticleScreen()
             }
             entry<TaskFinished> {
                 TaskManagerScreen()
