@@ -17,10 +17,13 @@ sealed class Routes: NavKey {
     data object TaskFinished : Routes()
 
     @Serializable
-    data object Cuadrant : Routes()
+    data object Quadrant : Routes()
 
     @Serializable
     data object BusinessCard : Routes()
+
+    @Serializable
+    data object Taximeter : Routes()
 
     @Serializable
     data object Error : Routes()
