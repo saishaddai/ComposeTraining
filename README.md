@@ -8,7 +8,7 @@ This repository is dedicated to exploring and experimenting with **Jetpack Compo
 ## 📱 About the Project
 
 - Practice building modern UIs with **Jetpack Compose**.
-- Add **Navigation 3** to move between screens properly (not implemented yet).
+- I'm using **Navigation 3** to move between screens properly. If you run this project, you can see the screens by yourself.
 - Replicate **popular app designs** and **UI challenges**.
 - Showcase how Compose can simplify and enhance Android development.
 - Explore **Kotlin Multiplatform** possibilities for sharing UI logic across platforms.
@@ -45,6 +45,22 @@ Please Check the directory `screens/` to see each screen implementation.
   <tr>
     <td><img src="screenshots/compose_birthday_card.png" width="300"></td>
     <td><img src="screenshots/compose_article.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><b>Checklist Done</b></td>
+    <td><b>Quadrants</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_checklist.png" width="300"></td>
+    <td><img src="screenshots/compose_quadrants.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><b>Contacts Card</b></td>
+    <td><b>Taximeter</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_contact.png" width="300"></td>
+    <td><img src="screenshots/compose_taximeter.png" width="300"></td>
   </tr>
 </table>
 
