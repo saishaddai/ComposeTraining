@@ -13,10 +13,11 @@ import androidx.navigation3.ui.NavDisplay
 import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.BusinessCard
-import com.saishaddai.composetraining.routes.Routes.Cuadrant
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
+import com.saishaddai.composetraining.routes.Routes.Quadrant
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
+import com.saishaddai.composetraining.routes.Routes.Taximeter
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.BusinessCardScreen
@@ -24,6 +25,7 @@ import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
+import com.saishaddai.composetraining.screens.TaximeterScreen
 
 @Composable
 fun NavigationWrapper() {
@@ -40,8 +42,9 @@ fun NavigationWrapper() {
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
                         "2" -> backStack.navigateTo(TaskFinished)
-                        "3" -> backStack.navigateTo(Cuadrant)
+                        "3" -> backStack.navigateTo(Quadrant)
                         "4" -> backStack.navigateTo(BusinessCard)
+                        "5" -> backStack.navigateTo(Taximeter)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -55,11 +58,14 @@ fun NavigationWrapper() {
             entry<TaskFinished> {
                 TaskManagerScreen()
             }
-            entry<Cuadrant> {
+            entry<Quadrant> {
                 QuadrantScreen()
             }
             entry<BusinessCard> {
                 BusinessCardScreen()
+            }
+            entry<Taximeter> {
+                TaximeterScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }
