@@ -13,6 +13,7 @@ import androidx.navigation3.ui.NavDisplay
 import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.BusinessCard
+import com.saishaddai.composetraining.routes.Routes.EasyDashboard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.Quadrant
@@ -21,6 +22,7 @@ import com.saishaddai.composetraining.routes.Routes.Taximeter
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.BusinessCardScreen
+import com.saishaddai.composetraining.screens.EasyDashboardScreen
 import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
@@ -45,6 +47,7 @@ fun NavigationWrapper() {
                         "3" -> backStack.navigateTo(Quadrant)
                         "4" -> backStack.navigateTo(BusinessCard)
                         "5" -> backStack.navigateTo(Taximeter)
+                        "6" -> backStack.navigateTo(EasyDashboard)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -66,6 +69,9 @@ fun NavigationWrapper() {
             }
             entry<Taximeter> {
                 TaximeterScreen()
+            }
+            entry<EasyDashboard> {
+                EasyDashboardScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }
