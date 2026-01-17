@@ -22,7 +22,7 @@ import com.saishaddai.composetraining.routes.Routes.Taximeter
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.BusinessCardScreen
-import com.saishaddai.composetraining.screens.EasyDashboardScreen
+import com.saishaddai.composetraining.screens.BasicDashboardScreen
 import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
@@ -71,7 +71,7 @@ fun NavigationWrapper() {
                 TaximeterScreen()
             }
             entry<EasyDashboard> {
-                EasyDashboardScreen()
+                BasicDashboardScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }
