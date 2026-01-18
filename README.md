@@ -61,6 +61,22 @@ Please Check the directory `screens/` to see each screen implementation.
   <tr>
     <td><img src="screenshots/compose_contact.png" width="300"></td>
     <td><img src="screenshots/compose_taximeter.png" width="300"></td>
+  </tr> 
+  <tr>
+    <td><b>Checklist Done</b></td>
+    <td><b>Quadrants</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_checklist.png" width="300"></td>
+    <td><img src="screenshots/compose_quadrants.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><b>Basic Dashboard</b></td>
+    <td><b></b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_basicdashboard.png" width="300"></td>
+    <td></td>
   </tr>
 </table>
 
