@@ -72,12 +72,13 @@ Please Check the directory `screens/` to see each screen implementation.
   </tr>
   <tr>
     <td><b>Basic Dashboard</b></td>
-    <td><b></b></td>
+    <td><b>Dice Roller</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/compose_basicdashboard.png" width="300"></td>
-    <td></td>
+    <td><img src="screenshots/compose_dice_roller.png" width="300"></td>
   </tr>
+  
 </table>
 
 ---

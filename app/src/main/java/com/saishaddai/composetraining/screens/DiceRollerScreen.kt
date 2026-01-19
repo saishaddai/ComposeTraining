@@ -21,13 +21,13 @@ import com.saishaddai.composetraining.R
 
 @Composable
 fun DiceRollerScreen() {
-    val image = painterResource(R.drawable.ic_task_completed)
+    val image = painterResource(R.drawable.dice_1)
     Column(modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
         Image(
             painter = image,
-            contentDescription = null
+            contentDescription = "1"
         )
         Button(
             onClick = {},
