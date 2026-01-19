@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.sp
 fun HomeScreen(navigateToScreen: (String) -> Unit) {
     Scaffold { paddingValues ->
         LazyColumn(Modifier.padding(paddingValues)) {
-            items(8) {
+            items(9) {
                 Box(
                     modifier = Modifier
                         .clickable {

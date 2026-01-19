@@ -23,4 +23,7 @@
     <string name="business_card_text2">\@AndroidDev</string>
     <string name="business_card_text3">jen.doe@android.com</string>
 
+<!--    Dice Roller -->
+    <string name="dice_roller_roll">Roll</string>
+
 </resources>

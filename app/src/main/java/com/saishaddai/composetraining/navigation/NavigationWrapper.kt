@@ -13,6 +13,7 @@ import androidx.navigation3.ui.NavDisplay
 import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.BusinessCard
+import com.saishaddai.composetraining.routes.Routes.DiceRoller
 import com.saishaddai.composetraining.routes.Routes.EasyDashboard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
@@ -48,6 +49,7 @@ fun NavigationWrapper() {
                         "4" -> backStack.navigateTo(BusinessCard)
                         "5" -> backStack.navigateTo(Taximeter)
                         "6" -> backStack.navigateTo(EasyDashboard)
+                        "7" -> backStack.navigateTo(DiceRoller)
                         else -> backStack.navigateTo(Error)
                     }
                 }
