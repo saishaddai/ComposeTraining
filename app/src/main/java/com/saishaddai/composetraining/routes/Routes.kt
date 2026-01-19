@@ -29,5 +29,8 @@ sealed class Routes : NavKey {
     data object EasyDashboard : Routes()
 
     @Serializable
+    data object DiceRoller : Routes()
+
+    @Serializable
     data object Error : Routes()
 }
