@@ -24,6 +24,7 @@ import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.BusinessCardScreen
 import com.saishaddai.composetraining.screens.BasicDashboardScreen
+import com.saishaddai.composetraining.screens.DiceRollerScreen
 import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
@@ -74,6 +75,9 @@ fun NavigationWrapper() {
             }
             entry<EasyDashboard> {
                 BasicDashboardScreen()
+            }
+            entry<DiceRoller> {
+                DiceRollerScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }
