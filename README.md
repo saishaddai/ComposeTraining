@@ -78,7 +78,14 @@ Please Check the directory `screens/` to see each screen implementation.
     <td><img src="screenshots/compose_basicdashboard.png" width="300"></td>
     <td><img src="screenshots/compose_dice_roller.png" width="300"></td>
   </tr>
-  
+  <tr>
+    <td><b>Error Screen</b></td>
+    <td><b>&blank;</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_error.png" width="300"></td>
+    <td>&blank;</td>
+  </tr>
 </table>
 
 ---
