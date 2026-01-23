@@ -1,5 +1,6 @@
 package com.saishaddai.composetraining.navigation
 
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
@@ -31,6 +32,7 @@ import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 import com.saishaddai.composetraining.screens.TaximeterScreen
 
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun NavigationWrapper() {
     val backStack: NavBackStack<NavKey> = rememberNavBackStack(Home)
