@@ -26,7 +26,7 @@ sealed class Routes : NavKey {
     data object Taximeter : Routes()
 
     @Serializable
-    data object EasyDashboard : Routes()
+    data object BasicDashboard : Routes()
 
     @Serializable
     data object DiceRoller : Routes()

@@ -14,7 +14,7 @@ import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.BusinessCard
 import com.saishaddai.composetraining.routes.Routes.DiceRoller
-import com.saishaddai.composetraining.routes.Routes.EasyDashboard
+import com.saishaddai.composetraining.routes.Routes.BasicDashboard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.Quadrant
@@ -48,7 +48,7 @@ fun NavigationWrapper() {
                         "3" -> backStack.navigateTo(Quadrant)
                         "4" -> backStack.navigateTo(BusinessCard)
                         "5" -> backStack.navigateTo(Taximeter)
-                        "6" -> backStack.navigateTo(EasyDashboard)
+                        "6" -> backStack.navigateTo(BasicDashboard)
                         "7" -> backStack.navigateTo(DiceRoller)
                         else -> backStack.navigateTo(Error)
                     }
@@ -72,7 +72,7 @@ fun NavigationWrapper() {
             entry<Taximeter> {
                 TaximeterScreen()
             }
-            entry<EasyDashboard> {
+            entry<BasicDashboard> {
                 BasicDashboardScreen()
             }
             entry<DiceRoller> {
