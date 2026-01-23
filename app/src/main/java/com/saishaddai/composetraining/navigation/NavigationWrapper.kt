@@ -42,7 +42,6 @@ fun NavigationWrapper() {
             entry<Home> {
                 HomeScreen {
                     when (it) {
-                        //TODO Improve this part to depend on a sealed class instead of the index as String
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
                         "2" -> backStack.navigateTo(TaskFinished)

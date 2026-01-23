@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
@@ -21,24 +22,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.saishaddai.composetraining.data.screens
 
 
 @Composable
 fun HomeScreen(navigateToScreen: (String) -> Unit) {
     Scaffold { paddingValues ->
         LazyColumn(Modifier.padding(paddingValues)) {
-            items(9) {
+            items(screens) { screen ->
                 Box(
-                    modifier = Modifier
-                        .clickable {
-                            navigateToScreen(it.toString())
-                        }
-                ) {
+                    modifier = Modifier.clickable {
+                            navigateToScreen(screen.id)
+                        }) {
                     Card(
                         modifier = Modifier
                             .padding(horizontal = 16.dp, vertical = 8.dp)
-                            .fillMaxWidth(),
-                        shape = RoundedCornerShape(8.dp)
+                            .fillMaxWidth(), shape = RoundedCornerShape(8.dp)
                     ) {
                         Row(
                             modifier = Modifier
@@ -48,8 +47,8 @@ fun HomeScreen(navigateToScreen: (String) -> Unit) {
                             horizontalArrangement = Arrangement.SpaceBetween
                         ) {
                             Column(modifier = Modifier.weight(1f)) {
-                                Text("Title $it", fontSize = 18.sp)
-                                Text("this is a description for the item $it")
+                                Text(screen.title, fontSize = 18.sp)
+                                Text(screen.description)
                             }
                             Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "")
                         }
