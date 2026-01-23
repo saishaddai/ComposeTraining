@@ -1,5 +1,6 @@
 package com.saishaddai.composetraining.navigation
 
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
@@ -14,7 +15,7 @@ import com.saishaddai.composetraining.routes.Routes.ArticleRoute
 import com.saishaddai.composetraining.routes.Routes.BirthdayCard
 import com.saishaddai.composetraining.routes.Routes.BusinessCard
 import com.saishaddai.composetraining.routes.Routes.DiceRoller
-import com.saishaddai.composetraining.routes.Routes.EasyDashboard
+import com.saishaddai.composetraining.routes.Routes.BasicDashboard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.Quadrant
@@ -31,6 +32,7 @@ import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 import com.saishaddai.composetraining.screens.TaximeterScreen
 
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun NavigationWrapper() {
     val backStack: NavBackStack<NavKey> = rememberNavBackStack(Home)
@@ -42,14 +44,13 @@ fun NavigationWrapper() {
             entry<Home> {
                 HomeScreen {
                     when (it) {
-                        //TODO Improve this part to depend on a sealed class instead of the index as String
                         "0" -> backStack.navigateTo(BirthdayCard(it))
                         "1" -> backStack.navigateTo(ArticleRoute)
                         "2" -> backStack.navigateTo(TaskFinished)
                         "3" -> backStack.navigateTo(Quadrant)
                         "4" -> backStack.navigateTo(BusinessCard)
                         "5" -> backStack.navigateTo(Taximeter)
-                        "6" -> backStack.navigateTo(EasyDashboard)
+                        "6" -> backStack.navigateTo(BasicDashboard)
                         "7" -> backStack.navigateTo(DiceRoller)
                         else -> backStack.navigateTo(Error)
                     }
@@ -73,7 +74,7 @@ fun NavigationWrapper() {
             entry<Taximeter> {
                 TaximeterScreen()
             }
-            entry<EasyDashboard> {
+            entry<BasicDashboard> {
                 BasicDashboardScreen()
             }
             entry<DiceRoller> {

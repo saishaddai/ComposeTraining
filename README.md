@@ -63,14 +63,6 @@ Please Check the directory `screens/` to see each screen implementation.
     <td><img src="screenshots/compose_taximeter.png" width="300"></td>
   </tr> 
   <tr>
-    <td><b>Checklist Done</b></td>
-    <td><b>Quadrants</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/compose_checklist.png" width="300"></td>
-    <td><img src="screenshots/compose_quadrants.png" width="300"></td>
-  </tr>
-  <tr>
     <td><b>Basic Dashboard</b></td>
     <td><b>Dice Roller</b></td>
   </tr>
