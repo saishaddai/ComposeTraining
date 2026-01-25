@@ -18,6 +18,7 @@ import com.saishaddai.composetraining.routes.Routes.DiceRoller
 import com.saishaddai.composetraining.routes.Routes.BasicDashboard
 import com.saishaddai.composetraining.routes.Routes.Error
 import com.saishaddai.composetraining.routes.Routes.Home
+import com.saishaddai.composetraining.routes.Routes.MagicCard
 import com.saishaddai.composetraining.routes.Routes.Quadrant
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.routes.Routes.Taximeter
@@ -28,6 +29,7 @@ import com.saishaddai.composetraining.screens.BasicDashboardScreen
 import com.saishaddai.composetraining.screens.DiceRollerScreen
 import com.saishaddai.composetraining.screens.ErrorScreen
 import com.saishaddai.composetraining.screens.HomeScreen
+import com.saishaddai.composetraining.screens.MagicCardScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 import com.saishaddai.composetraining.screens.TaximeterScreen
@@ -52,6 +54,7 @@ fun NavigationWrapper() {
                         "5" -> backStack.navigateTo(Taximeter)
                         "6" -> backStack.navigateTo(BasicDashboard)
                         "7" -> backStack.navigateTo(DiceRoller)
+                        "8" -> backStack.navigateTo(MagicCard)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -79,6 +82,9 @@ fun NavigationWrapper() {
             }
             entry<DiceRoller> {
                 DiceRollerScreen()
+            }
+            entry<MagicCard> {
+                MagicCardScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }

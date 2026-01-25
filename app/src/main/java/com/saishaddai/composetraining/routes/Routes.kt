@@ -3,34 +3,39 @@ package com.saishaddai.composetraining.routes
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
-sealed class Routes : NavKey {
-    @Serializable
-    data object Home : Routes()
+object Routes {
 
     @Serializable
-    data class BirthdayCard(val name: String) : Routes()
+    data object Home: NavKey
 
     @Serializable
-    data object ArticleRoute : Routes()
+    data class BirthdayCard(val name: String): NavKey
 
     @Serializable
-    data object TaskFinished : Routes()
+    data object ArticleRoute: NavKey
 
     @Serializable
-    data object Quadrant : Routes()
+    data object TaskFinished: NavKey
 
     @Serializable
-    data object BusinessCard : Routes()
+    data object Quadrant: NavKey
 
     @Serializable
-    data object Taximeter : Routes()
+    data object BusinessCard: NavKey
 
     @Serializable
-    data object BasicDashboard : Routes()
+    data object Taximeter: NavKey
 
     @Serializable
-    data object DiceRoller : Routes()
+    data object BasicDashboard: NavKey
 
     @Serializable
-    data object Error : Routes()
+    data object DiceRoller: NavKey
+
+    @Serializable
+    data object MagicCard: NavKey
+
+    @Serializable
+    data object Error: NavKey
+
 }
