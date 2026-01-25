@@ -1,4 +1,4 @@
-package com.saishaddai.composetraining.data
+package com.saishaddai.composetraining.screens
 
 data class ScreenInfo(
     val id: String,
@@ -49,12 +49,12 @@ val screens = listOf(
     ),
     ScreenInfo(
         "8",
-        "Magic Card",
-        "This is a hard design. It's a Magic: The Gathering® card"
-    ),
-    ScreenInfo(
-        "999",
         "Error Screen",
         "Very simple error screen. Originally to show in case of screen not found"
+    ),
+    ScreenInfo(
+        "9",
+        "Magic Card",
+        "A screen that shows a Magic: The Gathering card. Based on a mockup provided by the user."
     ),
 )
