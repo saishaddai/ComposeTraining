@@ -1,5 +1,7 @@
 package com.saishaddai.composetraining.data
 
+
+//TODO Add a new value to the class for the screenshot image (R.drawable.xxx)
 data class ScreenInfo(
     val id: String,
     val title: String,
@@ -51,6 +53,11 @@ val screens = listOf(
         "8",
         "Magic Card",
         "This is a hard design. It's a Magic: The Gathering® card"
+    ),
+    ScreenInfo(
+        "9",
+        "Masonry List",
+        "This is a masonry image list. It mimics the way Pinterest shows the images with random heights"
     ),
     ScreenInfo(
         "999",

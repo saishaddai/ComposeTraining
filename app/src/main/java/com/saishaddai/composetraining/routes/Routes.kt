@@ -36,6 +36,9 @@ object Routes {
     data object MagicCard: NavKey
 
     @Serializable
+    data object Masonry: NavKey
+
+    @Serializable
     data object Error: NavKey
 
 }
