@@ -71,12 +71,20 @@ Please Check the directory `screens/` to see each screen implementation.
     <td><img src="screenshots/compose_dice_roller.png" width="300"></td>
   </tr>
   <tr>
-    <td><b>Error Screen</b></td>
-    <td><b>&blank;</b></td>
+    <td><b>Lemonade</b></td>
+    <td><b>Magic</b></td>
   </tr>
   <tr>
+    <td><img src="screenshots/compose_lemonade.png" width="300"></td>
+    <td><img src="screenshots/compose_magic_card.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><b>Masonry List</b></td>
+    <td><b>Error Screen</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/compose_masonry.png" width="300"></td>
     <td><img src="screenshots/compose_error.png" width="300"></td>
-    <td>&blank;</td>
   </tr>
 </table>
 
