@@ -56,6 +56,11 @@ val screens = listOf(
     ),
     ScreenInfo(
         "9",
+        "Lemonade",
+        "This is a part of the Android Dev Training for Compose. This one is fully functional"
+    ),
+    ScreenInfo(
+        "10",
         "Masonry List",
         "This is a masonry image list. It mimics the way Pinterest shows the images with random heights"
     ),
