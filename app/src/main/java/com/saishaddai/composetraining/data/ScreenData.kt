@@ -65,6 +65,11 @@ val screens = listOf(
         "This is a masonry image list. It mimics the way Pinterest shows the images with random heights"
     ),
     ScreenInfo(
+        "11",
+        "Tip Calculator",
+        "Also part of the Android Dev Training for Compose. This is a simple tip calculator. Fully functional too"
+    ),
+    ScreenInfo(
         "999",
         "Error Screen",
         "Very simple error screen. Originally to show in case of screen not found"

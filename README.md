@@ -80,11 +80,19 @@ Please Check the directory `screens/` to see each screen implementation.
   </tr>
   <tr>
     <td><b>Masonry List</b></td>
-    <td><b>Error Screen</b></td>
+    <td><b>Tip Calculator</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/compose_masonry.png" width="300"></td>
+    <td><img src="screenshots/compose_tip_calculator.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><b>Error Screen</b></td>
+    <td><b></b></td>
+  </tr>
+  <tr>
     <td><img src="screenshots/compose_error.png" width="300"></td>
+    <td></td>
   </tr>
 </table>
 
