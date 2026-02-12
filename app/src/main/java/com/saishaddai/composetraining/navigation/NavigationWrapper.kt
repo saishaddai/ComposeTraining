@@ -24,6 +24,7 @@ import com.saishaddai.composetraining.routes.Routes.Masonry
 import com.saishaddai.composetraining.routes.Routes.Quadrant
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.routes.Routes.Taximeter
+import com.saishaddai.composetraining.routes.Routes.TipCalculator
 import com.saishaddai.composetraining.screens.ArticleScreen
 import com.saishaddai.composetraining.screens.BirthdayScreen
 import com.saishaddai.composetraining.screens.BusinessCardScreen
@@ -37,6 +38,7 @@ import com.saishaddai.composetraining.screens.MasonryScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 import com.saishaddai.composetraining.screens.TaximeterScreen
+import com.saishaddai.composetraining.screens.TipCalculatorScreen
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -61,6 +63,7 @@ fun NavigationWrapper() {
                         "8" -> backStack.navigateTo(MagicCard)
                         "9" -> backStack.navigateTo(Lemonade)
                         "10" -> backStack.navigateTo(Masonry)
+                        "11" -> backStack.navigateTo(TipCalculator)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -97,6 +100,9 @@ fun NavigationWrapper() {
             }
             entry<Masonry> {
                 MasonryScreen()
+            }
+            entry<TipCalculator> {
+                TipCalculatorScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }

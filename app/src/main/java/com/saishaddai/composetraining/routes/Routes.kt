@@ -42,6 +42,9 @@ object Routes {
     data object Masonry: NavKey
 
     @Serializable
+    data object TipCalculator: NavKey
+
+    @Serializable
     data object Error: NavKey
 
 }
