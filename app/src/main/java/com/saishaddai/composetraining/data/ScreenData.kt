@@ -70,6 +70,11 @@ val screens = listOf(
         "Also part of the Android Dev Training for Compose. This is a simple tip calculator. Fully functional too"
     ),
     ScreenInfo(
+        "12",
+        "Grouped List",
+        "This is a list of elements grouped by date"
+    ),
+    ScreenInfo(
         "999",
         "Error Screen",
         "Very simple error screen. Originally to show in case of screen not found"

@@ -45,6 +45,9 @@ object Routes {
     data object TipCalculator: NavKey
 
     @Serializable
+    data object GroupedList: NavKey
+
+    @Serializable
     data object Error: NavKey
 
 }

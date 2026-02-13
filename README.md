@@ -87,12 +87,12 @@ Please Check the directory `screens/` to see each screen implementation.
     <td><img src="screenshots/compose_tip_calculator.png" width="300"></td>
   </tr>
   <tr>
+    <td><b>Grouped List Screen</b></td>
     <td><b>Error Screen</b></td>
-    <td><b></b></td>
   </tr>
   <tr>
+    <td><img src="screenshots/compose_grouped_list.png" width="300"></td>
     <td><img src="screenshots/compose_error.png" width="300"></td>
-    <td></td>
   </tr>
 </table>
 
