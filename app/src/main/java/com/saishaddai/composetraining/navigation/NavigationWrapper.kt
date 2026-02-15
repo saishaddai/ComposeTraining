@@ -22,6 +22,7 @@ import com.saishaddai.composetraining.routes.Routes.Home
 import com.saishaddai.composetraining.routes.Routes.Lemonade
 import com.saishaddai.composetraining.routes.Routes.MagicCard
 import com.saishaddai.composetraining.routes.Routes.Masonry
+import com.saishaddai.composetraining.routes.Routes.News
 import com.saishaddai.composetraining.routes.Routes.Quadrant
 import com.saishaddai.composetraining.routes.Routes.TaskFinished
 import com.saishaddai.composetraining.routes.Routes.Taximeter
@@ -37,6 +38,7 @@ import com.saishaddai.composetraining.screens.HomeScreen
 import com.saishaddai.composetraining.screens.LemonadeScreen
 import com.saishaddai.composetraining.screens.MagicCardScreen
 import com.saishaddai.composetraining.screens.MasonryScreen
+import com.saishaddai.composetraining.screens.NewsScreen
 import com.saishaddai.composetraining.screens.QuadrantScreen
 import com.saishaddai.composetraining.screens.TaskManagerScreen
 import com.saishaddai.composetraining.screens.TaximeterScreen
@@ -67,6 +69,7 @@ fun NavigationWrapper() {
                         "10" -> backStack.navigateTo(Masonry)
                         "11" -> backStack.navigateTo(TipCalculator)
                         "12" -> backStack.navigateTo(GroupedList)
+                        "13" -> backStack.navigateTo(News)
                         else -> backStack.navigateTo(Error)
                     }
                 }
@@ -109,6 +112,9 @@ fun NavigationWrapper() {
             }
             entry<GroupedList> {
                 GroupedListScreen()
+            }
+            entry<News> {
+                NewsScreen()
             }
             entry<Error> {
                 ErrorScreen { backStack.navigateBack() }

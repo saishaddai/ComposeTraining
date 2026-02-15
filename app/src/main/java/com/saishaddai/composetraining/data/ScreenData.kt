@@ -75,6 +75,11 @@ val screens = listOf(
         "This is a list of elements grouped by date"
     ),
     ScreenInfo(
+        "13",
+        "News Dashboard",
+        "This is a news more complicated dashboard. I asked Google Stitch to set up this challenge"
+    ),
+    ScreenInfo(
         "999",
         "Error Screen",
         "Very simple error screen. Originally to show in case of screen not found"
