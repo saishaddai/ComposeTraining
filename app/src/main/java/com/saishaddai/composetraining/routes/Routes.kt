@@ -48,6 +48,9 @@ object Routes {
     data object GroupedList: NavKey
 
     @Serializable
+    data object News: NavKey
+
+    @Serializable
     data object Error: NavKey
 
 }
